@@ -184,7 +184,7 @@
   width: 30%;
   margin: 10px;
   text-align: start;
-  font-size: var(--font-size_normal);
+  font-size: var(--font-size_small);
 }
 .title_shop {
   color: var(--color-grey_1);

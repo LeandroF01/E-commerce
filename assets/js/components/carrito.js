@@ -101,13 +101,19 @@ const $addElement = (id, cant) => {
       if ($Inventory(id, cant + $articleFilter.cant)) {
         $articleFilter.cant += cant;
       } else {
-        window.alert("Not enough in stock");
+        Swal.fire({
+          icon: "info",
+          text: "Not enough in stock",
+        });
       }
     } else {
       $shpingCart.push({ id, cant });
     }
   } else {
-    window.alert("Sorry, out of stock");
+    Swal.fire({
+      icon: "info",
+      text: "Sorry, out of stock",
+    });
   }
 };
 
@@ -117,9 +123,10 @@ const $removeElement = (id, cant) => {
   if ($articleFilter.cant - cant > 0) {
     $articleFilter.cant -= cant;
   } else {
-    const $confirm = window.confirm(
-      "Are you sure you want to remove the item?"
-    );
+    const $confirm = Swal.fire({
+      icon: "question",
+      text: "Are you sure you want to remove the item?",
+    });
     if ($confirm) {
       $shpingCart = $shpingCart.filter((article) => article.id !== id);
     }
@@ -144,7 +151,7 @@ const $totalPrice = () => {
     );
     $total += article.cant * $productFilter.price;
   }
-  return $total;
+  return `${$total}`;
 };
 const $totalShop = () => {
   let $total = 0;
@@ -169,7 +176,10 @@ const $buyElements = () => {
     $productFilter.cant -= article.cant;
   }
   $clearShopping();
-  window.alert("Thanks for your purchase");
+  Swal.fire({
+    icon: "success",
+    text: "Thanks for your purchase",
+  });
 };
 
 export {

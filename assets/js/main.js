@@ -57,7 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
         $buyElements();
         $renderProducts();
       } else {
-        window.alert("There are no items in the cart, please add a few");
+        Swal.fire({
+          icon: "error",
+          text: "There are no items in the cart, please add a few",
+        });
       }
     }
     $renderShoppinCart();
