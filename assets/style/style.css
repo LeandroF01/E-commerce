@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*-- video --*/
+
+.container_video-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video_home {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/*-- bar navigation --*/
+.container_elementents-bar {
+  position: fixed;
+  display: flex;
+  background: white;
+  column-gap: 2rem;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.nav-menu {
+  display: flex;
+}
+.container_bar-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.bar_navigation {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+.image_icon-nike {
+  margin-left: 30px;
+}
+.image_icon-nike img {
+  width: 3rem;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+.container-offers {
+  padding: 50px;
+  position: relative;
+}
+.container_img-offers img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.conatiner_elements-offers {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  font-family: "Nike Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 55%;
+  left: 7%;
+  text-align: center;
+}
+
+.title-0ffers {
+  display: grid;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.botton1,
+.botton2 {
+  font-size: 0.8rem;
+  color: black;
+  background: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.js_scroll {
+  opacity: 0;
+  transition: 500ms;
+}
+
+.js_scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+.bars__menu {
+  display: none;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1150px) {
+  .video_home {
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+  .js_scroll {
+    opacity: 1;
+  }
+  #offers {
+    height: 100vh;
+  }
+  .container-offers {
+    top: 10%;
+    padding: 0%;
+    width: 100%;
+  }
+  .container_img-offers {
+    top: 0%;
+  }
+  .conatiner_elements-offers {
+    color: var(--color-black);
+    position: static;
+    margin: 15px;
+  }
+  .botton1,
+  .botton2 {
+    background: black;
+    color: white;
+  }
+  .nav-menu {
+    flex-direction: column;
+  }
+  .nav-menu li {
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .container_bar-navigation {
+    align-items: center;
+    margin: 0;
+    background: white;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    transition: 1.1s;
+  }
+  .container-bars_menu {
+    margin: auto;
+  }
+  .bars__menu {
+    display: block;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .bars__menu span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    height: 3px;
+    background: black;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+  }
+
+  .activeline1__bars-menu {
+    transform: rotate(45deg) translate(-1px, 2px);
+  }
+
+  .activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+  }
+
+  .activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+  }
+  .lef_navigation {
+    left: 0%;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./assets/style/stylePag1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;300&family=Poppins:wght@200;300;400;600&family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar_container">
+      <div class="container_icon">
+        <a class="image_icon-nike" href="./index.html"
+          ><img src="./assets/img/nike.png" alt="icon-nike"
+        /></a>
+      </div>
+      <div class="container_shop-cart" id="section-container_open">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="counter-shoper_cart">0</span>
+      </div>
+    </nav>
+    <section id="container_products"></section>
+    <section class="section-container_shopping" id="shoppimg_cart-a">
+      <div class="container-shopcart" id="section-container_close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h3 class="tittle-shoppin">Shoppin Cart</h3>
+      <div id="section_shoppin"></div>
+
+      <div class="tittle-total">
+        <h3>Total: $<span id="priceTotal">0.00</span></h3>
+      </div>
+      <div id="btnsAccion">
+        <button type="button" class="buy">Buy</button>
+        <button type="button" class="clear">Clear</button>
+      </div>
+    </section>
+
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
+</html>

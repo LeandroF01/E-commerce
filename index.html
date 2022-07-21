@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;300&family=Poppins:wght@200;300;400;600&family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="home">
+      <div class="container_video-home">
+        <video
+          class="video_home"
+          src="./assets/img/Nike-video.mp4"
+          autoplay="true"
+          muted="true"
+          loop="true"
+        ></video>
+      </div>
+      <nav class="container_elementents-bar">
+        <a class="image_icon-nike" href="#"
+          ><img src="./assets/img/nike.png" alt="icon-nike"
+        /></a>
+        <div class="container_bar-navigation">
+          <ul class="nav-menu">
+            <li><a href="#home" class="bar_navigation home-bar">Home</a></li>
+            <li><a href="#offers" class="bar_navigation new-bar">News </a></li>
+            <li>
+              <a href="./pag1.html" class="bar_navigation pro-bar">Products</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-bars_menu">
+          <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+      </nav>
+    </header>
+    <section id="offers">
+      <div class="container-offers js_scroll slide-right">
+        <div class="container_img-offers">
+          <img loading="lazy" src="./assets/img/nike-sport.jpg" alt="" />
+        </div>
+        <div class="conatiner_elements-offers">
+          <h3 class="title-0ffers">CORK PLANT <span>COLLECTION</span></h3>
+          <a class="botton1" href="#">Ver mas</a>
+          <a class="botton2" href="./pag1.html">Comprar</a>
+        </div>
+      </div>
+      <div class="container-offers js_scroll slide-left">
+        <div class="container_img-offers">
+          <img loading="lazy" src="./assets/img/model.jpg" alt="" />
+        </div>
+        <div class="conatiner_elements-offers">
+          <h3 class="title-0ffers">NIKE BLAZER</h3>
+          <a class="botton1" href="#">Ver mas</a>
+          <a class="botton2" href="./pag1.html">Comprar</a>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/components/animationscroll.js"></script>
+    <script src="./assets/js/components/bar-menu.js"></script>
+  </body>
+</html>
