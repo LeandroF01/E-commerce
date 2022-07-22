@@ -139,7 +139,7 @@ li {
 @media (max-width: 1150px) {
   .video_home {
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 100%;
   }
   .js_scroll {
     opacity: 1;
@@ -176,7 +176,6 @@ li {
 
   .container_bar-navigation {
     align-items: center;
-    margin: 0;
     background: white;
     position: fixed;
     top: 50px;
@@ -186,7 +185,7 @@ li {
     transition: 1.1s;
   }
   .container-bars_menu {
-    margin: auto;
+    margin-left: auto;
   }
   .bars__menu {
     display: block;
